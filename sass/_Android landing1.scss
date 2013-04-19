@@ -57,12 +57,23 @@ body{
 			display: inline-block;
 			padding: 0 23px;
 			border-right: 1px solid #d9d9d9;
+			&:last-child{
+				border-right: none;
+			}
+			&:hover{
+				margin-top: -4px;
+				border-top: 4px solid #0090d3;
+			}
 		}
 		.menu__item{
+			display: block;
 			color: #000;
 			text-decoration: none;
 			font-size: 22px;
 			font-weight: 300;
+			&:hover{
+				color: #0090d3;
+			}
 		}
 		.menu__item_bold{
 			font-weight: 400;

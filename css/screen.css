@@ -71,7 +71,10 @@ body { font-weight: normal; font-style: normal; font-family: 'Yanone Kaffeesatz'
 .l-menu .menu { display: inline-block; text-align: center; }
 .l-menu .menu ul { padding: 3px 0px; list-style-type: none; line-height: 33px; }
 .l-menu .menu li { display: inline-block; padding: 0 23px; border-right: 1px solid #d9d9d9; }
-.l-menu .menu .menu__item { color: #000; text-decoration: none; font-size: 22px; font-weight: 300; }
+.l-menu .menu li:last-child { border-right: none; }
+.l-menu .menu li:hover { margin-top: -4px; border-top: 4px solid #0090d3; }
+.l-menu .menu .menu__item { display: block; color: #000; text-decoration: none; font-size: 22px; font-weight: 300; }
+.l-menu .menu .menu__item:hover { color: #0090d3; }
 .l-menu .menu .menu__item_bold { font-weight: 400; }
 .l-menu .menu .menu__item_act { border-bottom: 1px solid #0090d3; }
 
