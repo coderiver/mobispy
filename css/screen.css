@@ -1,108 +1,133 @@
-/* line 44, ../sass/_common.scss */
-* {
-  margin: 0;
-  padding: 0;
-}
+@font-face { font-family: 'Dosis-Medium'; src: url("../fonts/Dosis-Medium.eot"); src: local("☺"), url("../fonts/Dosis-Medium.woff") format("woff"), url("../fonts/Dosis-Medium.ttf") format("truetype"), url("../fonts/Dosis-Medium.svg") format("svg"); font-weight: normal; font-style: normal; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 45, ../sass/_common.scss */
-  * {
-    -webkit-text-size-adjust: none;
-  }
-}
-/* line 46, ../sass/_common.scss */
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
+@font-face { font-family: 'Dosis-SemiBold'; src: url("../fonts/Dosis-SemiBold.eot"); src: local("☺"), url("../fonts/Dosis-SemiBold.woff") format("woff"), url("../fonts/Dosis-SemiBold.ttf") format("truetype"), url("../fonts/Dosis-SemiBold.svg") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 47, ../sass/_common.scss */
-input[type="submit"]::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
+@font-face { font-family: 'Dosis-Bold'; src: url("fonts/Dosis-Bold.eot"); src: local("☺"), url("../fonts/Dosis-Bold.woff") format("woff"), url("../fonts/Dosis-Bold.ttf") format("truetype"), url("../fonts/Dosis-Bold.svg") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 49, ../sass/_common.scss */
-body {
-  font-family: Arial,sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.4;
-}
+@font-face { font-family: 'open_sansregular'; src: url("../fonts/opensans-regular-webfont.eot"); src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 58, ../sass/_common.scss */
-a img, fieldset {
-  border: none;
-}
+@font-face { font-family: 'Yanone Kaffeesatz'; src: url("fonts/YanoneKaffeesatz-Regular.eot"); src: local("☺"), url("../fonts/YanoneKaffeesatz-Regular.woff") format("woff"), url("../fonts/YanoneKaffeesatz-Regular.ttf") format("truetype"), url("../fonts/YanoneKaffeesatz-Regular.svg") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 61, ../sass/_common.scss */
-a {
-  color: #00919e;
-}
+@font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 200; src: local("Yanone Kaffeesatz ExtraLight"), local("YanoneKaffeesatz-ExtraLight"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRYa6iXjgqaxY3DU3RqApPOI.woff) format("woff"); }
+
+@font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 400; src: local("Yanone Kaffeesatz Regular"), local("YanoneKaffeesatz-Regular"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format("woff"); }
+
+* { margin: 0; padding: 0; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
+
+body { font-family: Arial,sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; }
+
+a img, fieldset { border: none; }
+
+a { color: #00919e; }
+
+@font-face { font-family: 'Dosis-Medium'; src: url("../fonts/Dosis-Medium.eot"); src: local("☺"), url("../fonts/Dosis-Medium.woff") format("woff"), url("../fonts/Dosis-Medium.ttf") format("truetype"), url("../fonts/Dosis-Medium.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Dosis-SemiBold'; src: url("../fonts/Dosis-SemiBold.eot"); src: local("☺"), url("../fonts/Dosis-SemiBold.woff") format("woff"), url("../fonts/Dosis-SemiBold.ttf") format("truetype"), url("../fonts/Dosis-SemiBold.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Dosis-Bold'; src: url("fonts/Dosis-Bold.eot"); src: local("☺"), url("../fonts/Dosis-Bold.woff") format("woff"), url("../fonts/Dosis-Bold.ttf") format("truetype"), url("../fonts/Dosis-Bold.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'open_sansregular'; src: url("../fonts/opensans-regular-webfont.eot"); src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Yanone Kaffeesatz'; src: url("fonts/YanoneKaffeesatz-Regular.eot"); src: local("☺"), url("../fonts/YanoneKaffeesatz-Regular.woff") format("woff"), url("../fonts/YanoneKaffeesatz-Regular.ttf") format("truetype"), url("../fonts/YanoneKaffeesatz-Regular.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 200; src: local("Yanone Kaffeesatz ExtraLight"), local("YanoneKaffeesatz-ExtraLight"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRYa6iXjgqaxY3DU3RqApPOI.woff) format("woff"); }
+
+@font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 400; src: local("Yanone Kaffeesatz Regular"), local("YanoneKaffeesatz-Regular"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format("woff"); }
 
 /* default layout */
-/* line 3, ../sass/_layouts.scss */
-.l {
-  width: 100%;
-  display: inline-block;
-}
-/* line 6, ../sass/_layouts.scss */
-.l .l-col1 {
-  float: left;
-  width: 20%;
-}
-/* line 11, ../sass/_layouts.scss */
-.l .l-col2 {
-  float: right;
-  width: 70%;
-}
+.l { width: 100%; display: inline-block; }
+.l .l-col1 { float: left; width: 20%; }
+.l .l-col2 { float: right; width: 70%; }
 
-/* line 9, ../sass/_styledocco.scss */
-.button {
-  padding: 9px 14px;
-  font-size: 12px;
-  line-height: normal;
-  border-radius: 5px;
-  display: inline-block;
-}
+@font-face { font-family: 'Dosis-Medium'; src: url("../fonts/Dosis-Medium.eot"); src: local("☺"), url("../fonts/Dosis-Medium.woff") format("woff"), url("../fonts/Dosis-Medium.ttf") format("truetype"), url("../fonts/Dosis-Medium.svg") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 19, ../sass/_styledocco.scss */
-.button_large {
-  font-size: 30px;
-}
+@font-face { font-family: 'Dosis-SemiBold'; src: url("../fonts/Dosis-SemiBold.eot"); src: local("☺"), url("../fonts/Dosis-SemiBold.woff") format("woff"), url("../fonts/Dosis-SemiBold.ttf") format("truetype"), url("../fonts/Dosis-SemiBold.svg") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 29, ../sass/_styledocco.scss */
-.greenbutton {
-  padding: 9px 14px;
-  font-size: 12px;
-  line-height: normal;
-  border-radius: 5px;
-  background: green;
-  color: #fff;
-  text-shadow: 0 -1px 0 black;
-  display: inline-block;
-}
-/* line 38, ../sass/_styledocco.scss */
-.greenbutton i {
-  width: 10px;
-  height: 10px;
-  background: pink;
-  display: inline-block;
-  margin-right: 10px;
-}
+@font-face { font-family: 'Dosis-Bold'; src: url("fonts/Dosis-Bold.eot"); src: local("☺"), url("../fonts/Dosis-Bold.woff") format("woff"), url("../fonts/Dosis-Bold.ttf") format("truetype"), url("../fonts/Dosis-Bold.svg") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 49, ../sass/_styledocco.scss */
-.greenbutton_large {
-  font-size: 30px;
-}
+@font-face { font-family: 'open_sansregular'; src: url("../fonts/opensans-regular-webfont.eot"); src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 8, ../sass/screen.scss */
-div {
-  background: red;
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 8, ../sass/screen.scss */
-  div {
-    background: blue;
-  }
-}
+@font-face { font-family: 'Yanone Kaffeesatz'; src: url("fonts/YanoneKaffeesatz-Regular.eot"); src: local("☺"), url("../fonts/YanoneKaffeesatz-Regular.woff") format("woff"), url("../fonts/YanoneKaffeesatz-Regular.ttf") format("truetype"), url("../fonts/YanoneKaffeesatz-Regular.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 200; src: local("Yanone Kaffeesatz ExtraLight"), local("YanoneKaffeesatz-ExtraLight"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRYa6iXjgqaxY3DU3RqApPOI.woff) format("woff"); }
+
+@font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 400; src: local("Yanone Kaffeesatz Regular"), local("YanoneKaffeesatz-Regular"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format("woff"); }
+
+body { font-weight: normal; font-style: normal; font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 14px; }
+
+.header { position: relative; overflow: hidden; width: 1008px; height: 50px; margin: 0 auto; }
+.header .header__logo { float: left; background: url('../img/icons-s1ef06dd487.png') 0 0 no-repeat; width: 142px; height: 45px; }
+.header .header__btns { margin-top: -1px; float: right; }
+.header .header__btns li { padding: 5px 25px 5px 25px; display: inline-block; border: solid 1px #CCC; border-bottom: none; border-top-left-radius: 15px; border-top-right-radius: 15px; margin: 17px 2px 0 -1px; }
+.header .header__btns a { text-decoration: none; font-size: 18px; font-weight: 300; }
+.header .header__btns a:hover { text-decoration: underline; }
+
+.l-menu { width: 100%; border-top: solid 1px #cccccc; border-bottom: solid 1px #cccccc; background: #f7f7f7; display: inline-block; text-align: center; }
+.l-menu .menu { display: inline-block; text-align: center; }
+.l-menu .menu ul { padding: 3px 0px; list-style-type: none; line-height: 33px; }
+.l-menu .menu li { display: inline-block; padding: 0 23px; border-right: 1px solid #d9d9d9; }
+.l-menu .menu .menu__item { color: #000; text-decoration: none; font-size: 22px; font-weight: 300; }
+.l-menu .menu .menu__item_bold { font-weight: 400; }
+.l-menu .menu .menu__item_act { border-bottom: 1px solid #0090d3; }
+
+.l-content { overflow: hidden; width: 1008px; margin: 0 auto; }
+
+.phone-type { overflow: hidden; margin: 18px 31px 0px 78px; }
+
+.phone-type__img { float: left; }
+
+.phone-type__text { position: relative; float: right; width: 415px; }
+.phone-type__text h1 { font-weight: normal; font-style: normal; font-family: 'Dosis-Medium', sans-serif; font-size: 36px; color: #081e4b; }
+.phone-type__text p { margin: 25px 0 15px; font-weight: normal; font-style: normal; font-family: 'open_sansregular', sans-serif; font-size: 17px; text-transform: uppercase; line-height: 30px; }
+.phone-type__text ul { list-style-type: none; font-weight: normal; font-style: normal; font-family: 'open_sansregular', sans-serif; font-size: 13px; text-transform: uppercase; }
+.phone-type__text ul li { position: relative; padding: 10px 0 0 26px; }
+.phone-type__text ul li:before { content: ""; position: absolute; left: 0px; background: url('../img/icons-s1ef06dd487.png') 0 -90px no-repeat; width: 15px; height: 14px; }
+.phone-type__text h3 { text-align: center; margin: 28px 0 16px; font-weight: normal; font-style: normal; font-family: 'Dosis-SemiBold', sans-serif; font-size: 22px; color: #f98e0d; }
+.phone-type__text .phone-type__undo { position: absolute; left: -28px; bottom: 31px; }
+
+.btn-big { display: block; width: 375px; height: 55px; margin-left: 21px; padding-top: 20px; text-align: center; background: url(../img/btn-big.png); font-weight: normal; font-style: normal; font-family: 'Dosis-Bold', sans-serif; font-size: 32px; text-transform: uppercase; text-decoration: none; color: #2d1000; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+.btn-big:hover { background: url(../img/btn-big-hover.png); }
+
+.description { margin: 92px 31px 10px 21px; }
+.description .description__text { overflow: hidden; margin-top: 32px; font-weight: normal; font-style: normal; font-family: 'open_sansregular', sans-serif; font-size: 17px; color: #666; }
+.description .description__text .description__comment { float: right; width: 381px; height: 93px; margin: 0px 95px 0px 44px; background-color: #e6f1f9; }
+.description .description__text .description__comment2 { float: left; width: 381px; height: 93px; margin: 72px 95px 22px 44px; background-color: #e6f1f9; }
+.description .description__text p:last-child { margin-top: 48px; border-top: 2px solid #e4f0fa; border-bottom: 5px solid #e4f0fa; }
+
+h1 { text-align: center; font-weight: normal; font-style: normal; font-family: 'Dosis-SemiBold', sans-serif; font-size: 30px; color: #666; text-transform: capitalize; }
+
+.stars { width: 643px; height: 19px; margin: 5px auto 0; background: url(../img/under_title-stars.png) 0 0 no-repeat; }
+
+.wide-banner-place { height: 135px; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU4YmFlOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAxOTBkMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #58bae8), color-stop(100%, #0190d3)); background-image: -webkit-linear-gradient(top, #58bae8, #0190d3); background-image: -moz-linear-gradient(top, #58bae8, #0190d3); background-image: -o-linear-gradient(top, #58bae8, #0190d3); background-image: linear-gradient(top, #58bae8, #0190d3); }
+.wide-banner-place .wide-banner1, .wide-banner-place .wide-banner2 { height: 135px; margin: 0 auto; width: 983px; background: url(../img/banner.png); }
+.wide-banner-place .wide-banner2 { background: url(../img/banner2.png); }
+.wide-banner-place .wide-banner-button { position: relative; top: 40px; left: 681px; display: block; width: 293px; height: 58px; background: url(../img/btn-banner.png); }
+.wide-banner-place .wide-banner-button:hover { background: url(../img/btn-banner-act.png); }
+
+.options { margin: 20px 31px 0px 13px; }
+.options .options__text { margin-top: 10px; font-weight: normal; font-style: normal; font-family: 'open_sansregular', sans-serif; font-size: 14px; color: #666; }
+.options .options__col { width: 47%; float: left; margin-top: 34px; margin-left: 28px; }
+.options .options__col .options__item, .options .options__col img { clear: both; margin-bottom: 30px; }
+.options .options__col h3 { display: block; margin: 0px 0 23px; font-weight: normal; font-style: normal; font-family: 'Dosis-Medium', sans-serif; font-size: 33px; text-transform: capitalize; color: #000; }
+.options .options__col p { font-weight: normal; font-style: normal; font-family: 'open_sansregular', sans-serif; font-size: 17px; }
+
+.option__col_right img { float: right; }
+
+.steps { margin: 0 38px 0px 31px; overflow: hidden; }
+.steps .steps__col { float: left; margin-top: 37px; margin-left: -1px; width: 33%; box-sizing: border-box; border: 1px solid #e2e2e2; }
+.steps .steps__col .steps__head { height: 35px; border-bottom: 1px solid #e2e2e2; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YwZjBmMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f0f0f0)); background-image: -webkit-linear-gradient(top, #ffffff, #f0f0f0); background-image: -moz-linear-gradient(top, #ffffff, #f0f0f0); background-image: -o-linear-gradient(top, #ffffff, #f0f0f0); background-image: linear-gradient(top, #ffffff, #f0f0f0); }
+.steps .steps__col .steps__head span { position: relative; display: block; padding-left: 32px; line-height: 36px; font-weight: normal; font-style: normal; font-family: 'open_sansregular', sans-serif; font-size: 17px; font-weight: bold; color: #37b6e8; }
+.steps .steps__col .steps__head span:before { content: ""; position: absolute; left: 5px; top: 6px; background: url('../img/icons-s1ef06dd487.png') 0 -55px no-repeat; width: 23px; height: 25px; }
+.steps .steps__col .steps__img { margin: 25px 0px 22px 79px; }
+.steps .steps__col .steps__text { margin: 0px 15px; }
+.steps .steps__col .steps__text p { font-weight: normal; font-style: normal; font-family: 'open_sansregular', sans-serif; font-size: 12px; text-align: justify; }
+.steps .steps__col h4 { font-weight: normal; font-style: normal; font-family: 'Dosis-Bold', sans-serif; font-size: 24px; font-weight: bold; text-transform: capitalize; color: #3f8312; }
+.steps .steps__col_first { margin-left: 0px; }
+
+.sponsors { width: 927px; height: 60px; margin: 8px 0 0; box-sizing: border-box; border: 1px solid #e2e2e2; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmZWZlZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #f8f8f8)); background-image: -webkit-linear-gradient(top, #efefef, #f8f8f8); background-image: -moz-linear-gradient(top, #efefef, #f8f8f8); background-image: -o-linear-gradient(top, #efefef, #f8f8f8); background-image: linear-gradient(top, #efefef, #f8f8f8); }
+.sponsors p { margin-left: 20px; font-weight: normal; font-style: normal; font-family: 'open_sansregular', sans-serif; font-size: 17px; line-height: 60px; }

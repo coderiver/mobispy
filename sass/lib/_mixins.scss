@@ -1,3 +1,56 @@
+// fonts
+@font-face {
+	font-family: 'Dosis-Medium';
+	src: url('../fonts/Dosis-Medium.eot');
+	src: local('☺'),
+	url('../fonts/Dosis-Medium.woff') format('woff'),
+	url('../fonts/Dosis-Medium.ttf') format('truetype'),
+	url('../fonts/Dosis-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Dosis-SemiBold';
+	src: url('../fonts/Dosis-SemiBold.eot');
+	src: local('☺'),
+	url('../fonts/Dosis-SemiBold.woff') format('woff'),
+	url('../fonts/Dosis-SemiBold.ttf') format('truetype'),
+	url('../fonts/Dosis-SemiBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Dosis-Bold';
+	src: url('fonts/Dosis-Bold.eot');
+	src: local('☺'),
+	url('../fonts/Dosis-Bold.woff') format('woff'),
+	url('../fonts/Dosis-Bold.ttf') format('truetype'),
+	url('../fonts/Dosis-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+	font-family: 'Yanone Kaffeesatz';
+	src: url('fonts/YanoneKaffeesatz-Regular.eot');
+	src: local('☺'),
+	url('../fonts/YanoneKaffeesatz-Regular.woff') format('woff'),
+	url('../fonts/YanoneKaffeesatz-Regular.ttf') format('truetype'),
+	url('../fonts/YanoneKaffeesatz-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 // responsive example, edit or remove
 $break-small: 500px;
 $break-large: 1180px;
@@ -29,13 +82,13 @@ $break-large: 1180px;
 }
 
 // TRANSITION
-@mixin transition($what) {
-	-moz-transition:    %what;
-	-o-transition:      %what;
-	-webkit-transition: %what;
-	-ms-transition:     %what;
-	transition:         %what;
-}
+// @mixin transition($what) {
+// 	-moz-transition:    %what;
+// 	-o-transition:      %what;
+// 	-webkit-transition: %what;
+// 	-ms-transition:     %what;
+// 	transition:         %what;
+// }
 %hide-text{
 	font: 0/0 a;
 	text-shadow: none;
@@ -124,4 +177,32 @@ $break-large: 1180px;
 //only image, when dimensions are useless
 @mixin si($map, $sprite){
 	background: sprite($map, $sprite) no-repeat;
+}
+
+// fonts
+
+@mixin Dosis-Medium {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Dosis-Medium', sans-serif;
+}
+@mixin open_sansregular {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'open_sansregular', sans-serif;
+}
+@mixin Dosis-SemiBold {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Dosis-SemiBold', sans-serif;
+}
+@mixin Dosis-Bold {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Dosis-Bold', sans-serif;
+}
+@mixin YanoneKaffeesatz {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }

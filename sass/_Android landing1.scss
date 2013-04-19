@@ -1,0 +1,333 @@
+@import "lib/base";
+// Normally mainpage styles
+body{
+	@include YanoneKaffeesatz;
+	font-size: 14px;
+}
+// HEADER styles
+
+.header{
+	position: relative;
+	overflow: hidden;
+	width: 1008px;
+	height: 50px;
+	margin: 0 auto;
+	.header__logo{
+		float: left;
+		@include sized-sprite($icons, logo);
+	}
+	.header__btns{
+		margin-top: -1px;
+		float: right;
+		li{
+			padding: 5px 25px 5px 25px;
+			display: inline-block;
+			border: solid 1px #CCC;
+			border-bottom: none;
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+			margin: 17px 2px 0 -1px;
+		}
+		a{
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: 300;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.l-menu{
+	width: 100%;
+	border-top: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+	background: #f7f7f7;
+	display: inline-block;
+		text-align: center;
+	.menu{
+		display: inline-block;
+		text-align: center;
+		ul{
+			padding: 3px 0px;
+			list-style-type: none;
+			line-height: 33px;
+		}
+		li{
+			display: inline-block;
+			padding: 0 23px;
+			border-right: 1px solid #d9d9d9;
+		}
+		.menu__item{
+			color: #000;
+			text-decoration: none;
+			font-size: 22px;
+			font-weight: 300;
+		}
+		.menu__item_bold{
+			font-weight: 400;
+		}
+		.menu__item_act{
+			border-bottom: 1px solid #0090d3;
+		}
+	}
+}
+// END HEADER styles
+
+// content
+
+.l-content{
+	overflow: hidden;
+	width: 1008px;
+	margin: 0 auto;
+}
+.phone-type{
+	overflow: hidden;
+	margin: 18px 31px 0px 78px;
+}
+.phone-type__img{
+	float: left;
+}
+.phone-type__text{
+	position: relative;
+	float: right;
+	width: 415px;
+	h1{
+		@include Dosis-Medium;
+		font-size: 36px;
+		color: #081e4b;
+		// text-transform: uppercase;
+	}
+	p{
+		margin: 25px 0 15px;
+		@include open_sansregular;
+		font-size: 17px;
+		text-transform: uppercase;
+		line-height: 30px;
+	}
+	ul{
+		list-style-type: none;
+		@include open_sansregular;
+		font-size: 13px;
+		text-transform: uppercase;
+		li{
+			position: relative;
+			padding: 10px 0 0 26px;
+			&:before{
+				content: "";
+				position: absolute;
+				left: 0px;
+				@include sized-sprite($icons, tick);
+			}	
+		}		
+	}
+	h3{
+		text-align: center;
+		margin: 28px 0 16px;
+		@include Dosis-SemiBold;
+		font-size: 22px;
+		color: #f98e0d;
+	}
+	.phone-type__undo{
+		position: absolute;
+		left: -28px;
+		bottom: 31px;
+	}
+}
+.btn-big{
+	display: block;
+	width: 375px;
+	height: 55px;
+	margin-left: 21px;
+	padding-top: 20px;
+	text-align:center;
+	background: url(../img/btn-big.png);
+	@include Dosis-Bold;
+	font-size: 32px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #2d1000;
+	@include border-radius(3px);
+	&:hover{
+		background: url(../img/btn-big-hover.png);
+	}
+}
+.description{
+	margin: 92px 31px 10px 21px;
+	.description__text{
+		overflow: hidden;
+		margin-top: 32px;
+		@include open_sansregular;
+		font-size: 17px;
+		color: #666;
+		.description__comment{
+			float: right;
+			width: 381px;
+			height: 93px;
+			margin: 0px 95px 0px 44px;
+			background-color: #e6f1f9;
+		}
+		.description__comment2{
+			float: left;
+			width: 381px;
+			height: 93px;
+			margin: 72px 95px 22px 44px;
+			background-color: #e6f1f9;
+		}
+		p{
+			&:last-child{
+			margin-top: 48px;
+			border-top: 2px solid #e4f0fa;
+			border-bottom: 5px solid #e4f0fa;
+			}
+		}
+
+	}
+}
+h1{
+	text-align: center;
+	@include Dosis-SemiBold;
+	font-size: 30px;
+	color: #666;
+	text-transform: capitalize;
+}
+.stars{
+	width: 643px;
+	height: 19px;
+	margin: 5px auto 0; 
+	background: url(../img/under_title-stars.png) 0 0 no-repeat;
+}
+
+// banner
+
+.wide-banner-place{
+	height: 135px;
+	@include background-image(linear-gradient(top, #58bae8, #0190d3));
+	.wide-banner1, .wide-banner2{
+		height: 135px;
+		margin: 0 auto;
+		width: 983px;
+		background: url(../img/banner.png);
+	}
+	.wide-banner2{
+		background: url(../img/banner2.png);
+	}
+	.wide-banner-button{
+		position: relative;
+		top: 40px;
+		left: 681px;
+		display: block;
+		width: 293px;
+		height: 58px;
+		background: url(../img/btn-banner.png);
+		&:hover{
+			background: url(../img/btn-banner-act.png);
+		}
+	}
+}
+// end banner
+.options{
+	margin: 20px 31px 0px 13px;
+	.options__text{
+		margin-top: 10px;
+		@include open_sansregular;
+		font-size: 14px;
+		color: #666;
+	}
+	.options__col{
+		width: 47%;
+		float: left;
+		margin-top: 34px;
+		margin-left: 28px;
+		.options__item, img{
+			clear: both;
+			margin-bottom: 30px;
+		}
+		h3{
+			display: block;
+			margin: 0px 0 23px;
+			@include Dosis-Medium;
+			font-size: 33px;
+			text-transform: capitalize;
+			color: #000;
+		}
+		p{
+			@include open_sansregular;
+			font-size: 17px;
+		}
+	}
+}
+.option__col_right img{
+	float: right;
+}
+
+.steps{
+	margin: 0 38px 0px 31px;
+	overflow: hidden;
+	.steps__col{
+		float: left;
+		margin-top: 37px;
+		margin-left: -1px;
+		width: 33%;
+		box-sizing: border-box;
+		border: 1px solid #e2e2e2;
+		.steps__head{
+			height: 35px;
+			border-bottom: 1px solid #e2e2e2;
+			@include background-image(linear-gradient(top, #fff, #f0f0f0));
+			span{
+				position: relative;
+				display: block;
+				padding-left: 32px;
+				line-height: 36px;
+				@include open_sansregular;
+				font-size: 17px;
+				font-weight: bold;
+				color: #37b6e8;
+				&:before{
+					content:"";
+					position: absolute;
+					left: 5px;
+					top: 6px;
+					@include sized-sprite($icons, arrow);
+				}
+			}
+		}
+		.steps__img{
+			margin: 25px 0px 22px 79px;
+
+		}
+		.steps__text{
+			margin: 0px 15px;
+			p{
+				@include open_sansregular;
+				font-size: 12px;
+				text-align: justify;
+			}
+		}
+		h4{
+			@include Dosis-Bold;
+			font-size: 24px;
+			font-weight: bold;
+			text-transform: capitalize;
+			color: #3f8312;
+		}	
+	}
+	.steps__col_first{
+		margin-left: 0px;
+	}
+}
+.sponsors{
+	width: 927px;
+	height: 60px;
+	margin: 8px 0 0;
+	box-sizing: border-box;
+	border: 1px solid #e2e2e2;
+	@include background-image(linear-gradient(top, #efefef, #f8f8f8));
+	p{
+		margin-left: 20px;
+		@include open_sansregular;
+		font-size: 17px;
+		line-height: 60px;
+	}
+}
