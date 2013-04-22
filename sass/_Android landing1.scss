@@ -107,6 +107,15 @@ body{
 	overflow: hidden;
 	margin: 18px 31px 0px 78px;
 	@include respond-to(iPad){
+		margin: 18px 10px 0px 5px;
+	}
+	@include respond-to(iPhone-5){
+		text-align: center;
+	}
+}
+.phone-type_location{
+	margin: 18px 31px 0px 5px;
+	@include respond-to(iPad){
 		margin: 18px 5px 0px;
 	}
 	@include respond-to(iPhone-5){
@@ -116,6 +125,15 @@ body{
 .phone-type__img{
 	float: left;
 	width: 49%;
+	@include respond-to(iPhone-5){
+		float: none;
+		margin: auto;
+	}
+}
+.phone-type__img_sms{
+	float: left;
+	width: 49%;
+	margin-top: 56px;
 	@include respond-to(iPhone-5){
 		float: none;
 		margin: auto;
@@ -327,12 +345,22 @@ h1{
 		margin-left: 0px;
 		text-align: center;
 	}
-		.options__item, img{
+		img{
 			clear: both;
 			margin-bottom: 30px;
-			@include respond-to(iPhone){
+			@include respond-to(iPad){
 				width: 100%;
 			}
+			@include respond-to(iPhone-5){
+				width: 50%;
+			}
+			@include respond-to(iPhone-w){
+				width: 80%;
+			}
+		}
+		.options__item{
+			clear: both;
+			margin-bottom: 30px;
 		}
 		h3{
 			display: block;
@@ -353,7 +381,7 @@ h1{
 }
 .option__col_right img{
 	float: right;
-	@include respond-to(iPhone-w){
+	@include respond-to(iPhone-5){
 		float: none;
 	}
 }
