@@ -52,11 +52,24 @@
 }
 
 // responsive example, edit or remove
-$break-small: 500px;
-$break-large: 1180px;
+$break-iphone: 320px;
+$break-iphone-5: 568px;
+$break-iphone-w: 480px;
+$break-medium: 768px;
+$break-large: 1008px;
+
 @mixin respond-to($media) {
-	@if $media == pda {
-		@media only screen and (max-width: $break-small) { @content; }
+	@if $media == iPhone {
+		@media only screen and (max-width: $break-iphone) { @content; }
+	}
+	@if $media == iPhone-5 {
+		@media only screen and (max-width: $break-iphone-5) { @content; }
+	}
+	@if $media == iPhone-w {
+		@media only screen and (max-width: $break-iphone-w) { @content; }
+	}
+	@if $media == iPad {
+		@media only screen and (max-width: $break-medium) { @content; }
 	}
 	@else if $media == wide {
 		@media only screen and (min-width: $break-large) { @content; }

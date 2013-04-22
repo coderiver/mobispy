@@ -9,9 +9,10 @@ body{
 .header{
 	position: relative;
 	overflow: hidden;
-	width: 1008px;
+	max-width: 1008px;
 	height: 50px;
-	margin: 0 auto;
+	margin: 2px auto 0px;
+	padding-left: 2px;
 	.header__logo{
 		float: left;
 		@include sized-sprite($icons, logo);
@@ -20,13 +21,16 @@ body{
 		margin-top: -1px;
 		float: right;
 		li{
-			padding: 5px 25px 5px 25px;
+			padding: 5px 25px 5px;
 			display: inline-block;
 			border: solid 1px #CCC;
 			border-bottom: none;
 			border-top-left-radius: 15px;
 			border-top-right-radius: 15px;
 			margin: 17px 2px 0 -1px;
+			@include respond-to(iPhone-w){
+				padding: 5px 15px 5px;
+			}
 		}
 		a{
 			text-decoration: none;
@@ -57,6 +61,10 @@ body{
 			display: inline-block;
 			padding: 0 23px;
 			border-right: 1px solid #d9d9d9;
+			@include respond-to(iPhone){
+				display: block;
+				border-right: none;
+			}
 			&:last-child{
 				border-right: none;
 			}
@@ -89,32 +97,60 @@ body{
 
 .l-content{
 	overflow: hidden;
-	width: 1008px;
+	max-width: 1008px;
 	margin: 0 auto;
+	@include respond-to(iPad){
+		max-width: 768px;
+	}
 }
 .phone-type{
 	overflow: hidden;
 	margin: 18px 31px 0px 78px;
+	@include respond-to(iPad){
+		margin: 18px 5px 0px;
+	}
+	@include respond-to(iPhone-5){
+		text-align: center;
+	}
 }
 .phone-type__img{
 	float: left;
+	width: 49%;
+	@include respond-to(iPhone-5){
+		float: none;
+		margin: auto;
+	}
 }
 .phone-type__text{
 	position: relative;
 	float: right;
-	width: 415px;
+	width: 46%;
+	@include respond-to(iPad){
+		width: 46%;
+	}
+	@include respond-to(iPhone-5){
+		float: none;
+		width: 90%;
+		margin: auto;
+	}
 	h1{
 		@include Dosis-Medium;
-		font-size: 36px;
+		font-size: 35px;
 		color: #081e4b;
-		// text-transform: uppercase;
+		@include respond-to(iPhone-5){
+			font-size: 30px;
+		}
 	}
 	p{
 		margin: 25px 0 15px;
 		@include open_sansregular;
+		text-align: justify;
 		font-size: 17px;
 		text-transform: uppercase;
 		line-height: 30px;
+		@include respond-to(iPhone-5){
+			font-size: 14px;
+		}
 	}
 	ul{
 		list-style-type: none;
@@ -124,6 +160,7 @@ body{
 		li{
 			position: relative;
 			padding: 10px 0 0 26px;
+			text-align: left;
 			&:before{
 				content: "";
 				position: absolute;
@@ -141,30 +178,55 @@ body{
 	}
 	.phone-type__undo{
 		position: absolute;
-		left: -28px;
-		bottom: 31px;
+		left: -29px;
+		bottom: 29px;
+		@include respond-to(iPad){
+			left: -50px;
+			bottom: 40px;
+		}
+		@include respond-to(iPhone-5){
+			font-size: 14px;
+			left: 14px;
+		}
+		@include respond-to(iPhone-w){
+			left: -24px;
+			bottom: 29px;
+		}
+		@include respond-to(iPhone){
+			left: -15px;
+		}
 	}
 }
 .btn-big{
 	display: block;
-	width: 375px;
+	width: 90%;
 	height: 55px;
-	margin-left: 21px;
+	margin: 0px auto;
 	padding-top: 20px;
 	text-align:center;
-	background: url(../img/btn-big.png);
+	background: url(../img/btn-big.png) no-repeat;
 	@include Dosis-Bold;
 	font-size: 32px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #2d1000;
 	@include border-radius(3px);
+	@include respond-to(iPhone-5){
+			width: 76%;
+		}
+	@include respond-to(iPhone){
+		width: 83%;
+		font-size: 27px;
+	}
 	&:hover{
-		background: url(../img/btn-big-hover.png);
+		background: url(../img/btn-big-hover.png) no-repeat;
 	}
 }
 .description{
 	margin: 92px 31px 10px 21px;
+	@include respond-to(iPhone){
+		margin: 30px 31px 10px 21px;	
+	}
 	.description__text{
 		overflow: hidden;
 		margin-top: 32px;
@@ -186,6 +248,9 @@ body{
 			background-color: #e6f1f9;
 		}
 		p{
+			@include respond-to(iPhone){
+			text-align: justify;
+		}
 			&:last-child{
 			margin-top: 48px;
 			border-top: 2px solid #e4f0fa;
@@ -203,10 +268,11 @@ h1{
 	text-transform: capitalize;
 }
 .stars{
-	width: 643px;
+	width: 68%;
 	height: 19px;
 	margin: 5px auto 0; 
 	background: url(../img/under_title-stars.png) 0 0 no-repeat;
+	background-size: 100%;
 }
 
 // banner
@@ -218,10 +284,11 @@ h1{
 		height: 135px;
 		margin: 0 auto;
 		width: 983px;
-		background: url(../img/banner.png);
+		background: url(../img/banner.png) no-repeat;
+		background-size: 100%;
 	}
 	.wide-banner2{
-		background: url(../img/banner2.png);
+		background: url(../img/banner2.png) no-repeat;
 	}
 	.wide-banner-button{
 		position: relative;
@@ -239,20 +306,33 @@ h1{
 // end banner
 .options{
 	margin: 20px 31px 0px 13px;
+	@include respond-to(iPhone-w){
+		margin: 20px 13px 0px;
+	}
 	.options__text{
 		margin-top: 10px;
 		@include open_sansregular;
+		text-align: justify;
 		font-size: 14px;
 		color: #666;
 	}
 	.options__col{
-		width: 47%;
+		width: 46%;
 		float: left;
 		margin-top: 34px;
 		margin-left: 28px;
+		@include respond-to(iPhone-5){
+		width: 100%;
+		float: none;
+		margin-left: 0px;
+		text-align: center;
+	}
 		.options__item, img{
 			clear: both;
 			margin-bottom: 30px;
+			@include respond-to(iPhone){
+				width: 100%;
+			}
 		}
 		h3{
 			display: block;
@@ -265,11 +345,17 @@ h1{
 		p{
 			@include open_sansregular;
 			font-size: 17px;
+			@include respond-to(iPhone-w){
+				text-align: left;
+			}
 		}
 	}
 }
 .option__col_right img{
 	float: right;
+	@include respond-to(iPhone-w){
+		float: none;
+	}
 }
 
 .steps{
@@ -282,6 +368,13 @@ h1{
 		width: 33%;
 		box-sizing: border-box;
 		border: 1px solid #e2e2e2;
+		text-align: center;
+		@include respond-to(iPhone-5){
+			float: none;
+			margin-left: 0px;
+			margin-top: 5px;
+			width: 100%;
+		}
 		.steps__head{
 			height: 35px;
 			border-bottom: 1px solid #e2e2e2;
@@ -295,6 +388,9 @@ h1{
 				font-size: 17px;
 				font-weight: bold;
 				color: #37b6e8;
+				@include respond-to(iPhone-5){
+					text-align: left;
+				}
 				&:before{
 					content:"";
 					position: absolute;
@@ -306,7 +402,9 @@ h1{
 		}
 		.steps__img{
 			margin: 25px 0px 22px 79px;
-
+			@include respond-to(iPhone-5){
+				margin: 20px 0px 22px;
+			}
 		}
 		.steps__text{
 			margin: 0px 15px;
@@ -317,6 +415,7 @@ h1{
 			}
 		}
 		h4{
+			text-align: left;
 			@include Dosis-Bold;
 			font-size: 24px;
 			font-weight: bold;
@@ -326,19 +425,5 @@ h1{
 	}
 	.steps__col_first{
 		margin-left: 0px;
-	}
-}
-.sponsors{
-	width: 927px;
-	height: 60px;
-	margin: 8px 0 0;
-	box-sizing: border-box;
-	border: 1px solid #e2e2e2;
-	@include background-image(linear-gradient(top, #efefef, #f8f8f8));
-	p{
-		margin-left: 20px;
-		@include open_sansregular;
-		font-size: 17px;
-		line-height: 60px;
 	}
 }
