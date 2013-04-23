@@ -298,7 +298,7 @@ h1{
 .wide-banner-place{
 	height: 135px;
 	@include background-image(linear-gradient(top, #58bae8, #0190d3));
-	.wide-banner1, .wide-banner2{
+	.wide-banner1, .wide-banner2, .wide-banner3, .wide-banner4, .wide-banner5, .wide-banner6, .wide-banner7, .wide-banner8, .wide-banner9, .wide-banner10{
 		height: 135px;
 		margin: 0 auto;
 		width: 983px;
@@ -307,6 +307,30 @@ h1{
 	}
 	.wide-banner2{
 		background: url(../img/banner2.png) no-repeat;
+	}
+	.wide-banner3{
+		background: url(../img/banner3.png) no-repeat;
+	}
+	.wide-banner4{
+		background: url(../img/banner4.png) no-repeat;
+	}
+	.wide-banner5{
+		background: url(../img/banner5.png) no-repeat;
+	}
+	.wide-banner6{
+		background: url(../img/banner6.png) no-repeat;
+	}
+	.wide-banner7{
+		background: url(../img/banner7.png) no-repeat;
+	}
+	.wide-banner8{
+		background: url(../img/banner8.png) no-repeat;
+	}
+	.wide-banner9{
+		background: url(../img/banner9.png) no-repeat;
+	}
+	.wide-banner10{
+		background: url(../img/banner10.png) no-repeat;
 	}
 	.wide-banner-button{
 		position: relative;
@@ -454,4 +478,24 @@ h1{
 	.steps__col_first{
 		margin-left: 0px;
 	}
+}
+
+// sponsors
+
+.sponsors{
+	@extend %clr;
+	width: 892px;
+	margin: 8px 38px 0px 31px;
+	padding: 9px 17px;
+	border: 1px solid #ddd;
+	font: 16px 'open_sansregular', sans-serif;
+	@include background-image(linear-gradient(top, #eee, #f6f6f6));
+	p{
+		float: left;
+		padding-top: 5px;
+	}
+	img{
+		float: left;
+		margin: 0px 10px;
+	}	
 }

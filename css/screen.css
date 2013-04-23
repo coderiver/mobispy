@@ -8,6 +8,10 @@
 
 @font-face { font-family: 'Yanone Kaffeesatz'; src: url("fonts/YanoneKaffeesatz-Regular.eot"); src: local("☺"), url("../fonts/YanoneKaffeesatz-Regular.woff") format("woff"), url("../fonts/YanoneKaffeesatz-Regular.ttf") format("truetype"), url("../fonts/YanoneKaffeesatz-Regular.svg") format("svg"); font-weight: normal; font-style: normal; }
 
+.sponsors { *zoom: 1; }
+.sponsors:before, .sponsors:after { content: " "; display: table; }
+.sponsors:after { clear: both; }
+
 @font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 200; src: local("Yanone Kaffeesatz ExtraLight"), local("YanoneKaffeesatz-ExtraLight"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRYa6iXjgqaxY3DU3RqApPOI.woff) format("woff"); }
 
 @font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 400; src: local("Yanone Kaffeesatz Regular"), local("YanoneKaffeesatz-Regular"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format("woff"); }
@@ -35,6 +39,10 @@ a { color: #00919e; }
 
 @font-face { font-family: 'Yanone Kaffeesatz'; src: url("fonts/YanoneKaffeesatz-Regular.eot"); src: local("☺"), url("../fonts/YanoneKaffeesatz-Regular.woff") format("woff"), url("../fonts/YanoneKaffeesatz-Regular.ttf") format("truetype"), url("../fonts/YanoneKaffeesatz-Regular.svg") format("svg"); font-weight: normal; font-style: normal; }
 
+.sponsors { *zoom: 1; }
+.sponsors:before, .sponsors:after { content: " "; display: table; }
+.sponsors:after { clear: both; }
+
 @font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 200; src: local("Yanone Kaffeesatz ExtraLight"), local("YanoneKaffeesatz-ExtraLight"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRYa6iXjgqaxY3DU3RqApPOI.woff) format("woff"); }
 
 @font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 400; src: local("Yanone Kaffeesatz Regular"), local("YanoneKaffeesatz-Regular"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format("woff"); }
@@ -53,6 +61,10 @@ a { color: #00919e; }
 @font-face { font-family: 'open_sansregular'; src: url("../fonts/opensans-regular-webfont.eot"); src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: 'Yanone Kaffeesatz'; src: url("fonts/YanoneKaffeesatz-Regular.eot"); src: local("☺"), url("../fonts/YanoneKaffeesatz-Regular.woff") format("woff"), url("../fonts/YanoneKaffeesatz-Regular.ttf") format("truetype"), url("../fonts/YanoneKaffeesatz-Regular.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+.sponsors { *zoom: 1; }
+.sponsors:before, .sponsors:after { content: " "; display: table; }
+.sponsors:after { clear: both; }
 
 @font-face { font-family: 'Yanone Kaffeesatz'; font-style: normal; font-weight: 200; src: local("Yanone Kaffeesatz ExtraLight"), local("YanoneKaffeesatz-ExtraLight"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/We_iSDqttE3etzfdfhuPRYa6iXjgqaxY3DU3RqApPOI.woff) format("woff"); }
 
@@ -132,8 +144,16 @@ h1 { text-align: center; font-weight: normal; font-style: normal; font-family: '
 .stars { width: 68%; height: 19px; margin: 5px auto 0; background: url(../img/under_title-stars.png) 0 0 no-repeat; background-size: 100%; }
 
 .wide-banner-place { height: 135px; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU4YmFlOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAxOTBkMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #58bae8), color-stop(100%, #0190d3)); background-image: -webkit-linear-gradient(top, #58bae8, #0190d3); background-image: -moz-linear-gradient(top, #58bae8, #0190d3); background-image: -o-linear-gradient(top, #58bae8, #0190d3); background-image: linear-gradient(top, #58bae8, #0190d3); }
-.wide-banner-place .wide-banner1, .wide-banner-place .wide-banner2 { height: 135px; margin: 0 auto; width: 983px; background: url(../img/banner.png) no-repeat; background-size: 100%; }
+.wide-banner-place .wide-banner1, .wide-banner-place .wide-banner2, .wide-banner-place .wide-banner3, .wide-banner-place .wide-banner4, .wide-banner-place .wide-banner5, .wide-banner-place .wide-banner6, .wide-banner-place .wide-banner7, .wide-banner-place .wide-banner8, .wide-banner-place .wide-banner9, .wide-banner-place .wide-banner10 { height: 135px; margin: 0 auto; width: 983px; background: url(../img/banner.png) no-repeat; background-size: 100%; }
 .wide-banner-place .wide-banner2 { background: url(../img/banner2.png) no-repeat; }
+.wide-banner-place .wide-banner3 { background: url(../img/banner3.png) no-repeat; }
+.wide-banner-place .wide-banner4 { background: url(../img/banner4.png) no-repeat; }
+.wide-banner-place .wide-banner5 { background: url(../img/banner5.png) no-repeat; }
+.wide-banner-place .wide-banner6 { background: url(../img/banner6.png) no-repeat; }
+.wide-banner-place .wide-banner7 { background: url(../img/banner7.png) no-repeat; }
+.wide-banner-place .wide-banner8 { background: url(../img/banner8.png) no-repeat; }
+.wide-banner-place .wide-banner9 { background: url(../img/banner9.png) no-repeat; }
+.wide-banner-place .wide-banner10 { background: url(../img/banner10.png) no-repeat; }
 .wide-banner-place .wide-banner-button { position: relative; top: 40px; left: 681px; display: block; width: 293px; height: 58px; background: url(../img/btn-banner.png); }
 .wide-banner-place .wide-banner-button:hover { background: url(../img/btn-banner-act.png); }
 
@@ -167,3 +187,7 @@ h1 { text-align: center; font-weight: normal; font-style: normal; font-family: '
 .steps .steps__col .steps__text p { font-weight: normal; font-style: normal; font-family: 'open_sansregular', sans-serif; font-size: 12px; text-align: justify; }
 .steps .steps__col h4 { text-align: left; font-weight: normal; font-style: normal; font-family: 'Dosis-Bold', sans-serif; font-size: 24px; font-weight: bold; text-transform: capitalize; color: #3f8312; }
 .steps .steps__col_first { margin-left: 0px; }
+
+.sponsors { width: 892px; margin: 8px 38px 0px 31px; padding: 9px 17px; border: 1px solid #ddd; font: 16px 'open_sansregular', sans-serif; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #f6f6f6)); background-image: -webkit-linear-gradient(top, #eeeeee, #f6f6f6); background-image: -moz-linear-gradient(top, #eeeeee, #f6f6f6); background-image: -o-linear-gradient(top, #eeeeee, #f6f6f6); background-image: linear-gradient(top, #eeeeee, #f6f6f6); }
+.sponsors p { float: left; padding-top: 5px; }
+.sponsors img { float: left; margin: 0px 10px; }
