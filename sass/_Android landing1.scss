@@ -485,12 +485,15 @@ h1{
 .sponsors{
 	position: relative;
 	@extend %clr;
-	width: 892px;
-	margin: 8px 38px 0px 31px;
-	padding: 9px 17px;
+	// width: 892px;
+	margin: 8px 48px 0px 31px;
+	padding: 9px 16px;
 	border: 1px solid #ddd;
 	font: 16px 'open_sansregular', sans-serif;
 	@include background-image(linear-gradient(top, #eee, #f6f6f6));
+	@include respond-to(iPhone-5){
+			margin: 8px 38px 0px 31px;
+	}
 	&:after{
 		content: "";
 		position: absolute;
@@ -501,12 +504,20 @@ h1{
 	p{
 		float: left;
 		padding-top: 5px;
+		@include respond-to(iPhone-5){
+			float: none;
+			padding: 5px 0;
+			text-align: center;
+		}
 	}
 	ul{
 		overflow: hidden;
 		li{
 			float: left;
-			padding: 0 5px;
+			padding: 0 6px;
+			@include respond-to(iPhone-5){
+				padding: 0 7px;
+			}
 		}
 		a, img{
 			vertical-align: middle;
