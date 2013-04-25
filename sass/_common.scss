@@ -64,6 +64,9 @@ a{
 
 	}
 }
+ul{
+	list-style-type: none;
+}
 // common styles, these could be attached to any block with "@extend %wyswyg;"
 %wyswyg{
 	p{

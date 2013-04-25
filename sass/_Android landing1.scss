@@ -483,6 +483,7 @@ h1{
 // sponsors
 
 .sponsors{
+	position: relative;
 	@extend %clr;
 	width: 892px;
 	margin: 8px 38px 0px 31px;
@@ -490,12 +491,25 @@ h1{
 	border: 1px solid #ddd;
 	font: 16px 'open_sansregular', sans-serif;
 	@include background-image(linear-gradient(top, #eee, #f6f6f6));
+	&:after{
+		content: "";
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+		@include sized-sprite($icons, mob);
+	}
 	p{
 		float: left;
 		padding-top: 5px;
 	}
-	img{
-		float: left;
-		margin: 0px 10px;
-	}	
+	ul{
+		overflow: hidden;
+		li{
+			float: left;
+			padding: 0 5px;
+		}
+		a, img{
+			vertical-align: middle;
+		}
+	}		
 }
