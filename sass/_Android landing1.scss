@@ -4,6 +4,13 @@ body{
 	@include YanoneKaffeesatz;
 	font-size: 14px;
 }
+.divide-line{
+	width: 100%;
+	height: 1px;
+	margin-bottom: 21px;
+	border: none;
+	background: #ddd;
+}
 // HEADER styles
 
 .header{
@@ -523,4 +530,231 @@ h1{
 			vertical-align: middle;
 		}
 	}		
+}
+
+// ---------------------styles for buy_now.html ------------------
+
+.l-buy-now{
+	margin: 0 auto;
+	h1{
+		margin: 31px 0 27px;
+		color: #000;
+		@include YanoneKaffeesatz;
+		font-size: 48px;
+		span{
+			color: #0090d3;
+		}
+	}
+	h2{
+		margin-bottom: 35px;
+		@include Dosis-Bold;
+		font-size: 32px;
+		color: #fff;
+	}
+}
+.l-get-it{
+	height: 200px;
+	@include background-image(linear-gradient(top, #58bae8, #0190d3));
+	.get-it{
+		position: relative;
+		max-width: 956px;
+		margin: 0 auto;
+		.get-it__img{
+			position: absolute;
+			top: 55px;
+		}
+		.get-it__arrow{
+			float: right;
+			width: 158px;
+			height: 101px;
+			margin: 0 110px 0 0;
+			@include sized-sprite($icons, arrow-green);
+		}
+		.btn-arrow{
+			float: right;
+			width: 297px;
+			height: 87px;
+			background: url(../img/btn-arrow.png) 0 0 no-repeat;
+			&:hover{
+				background: url(../img/btn-arrow-hover.png) 0 0 no-repeat;
+			}
+		}
+	}
+}
+.buy-now__container{
+	max-width: 956px;
+	margin: 0 auto;
+}
+.buy-now___offer{
+	float: right;
+	text-align: right;
+	margin: 26px 0 40px;
+	font-size: 18px;
+}
+.price-list{
+	clear: both;
+}
+.price-list__item{
+	position: relative;
+	float: left;
+	width: 24%;
+	text-align: center;
+	margin-left: 12px;
+	&:first-child{
+		margin: 59px 0 0 0;
+		ul{
+			@include border-radius(4px);
+		}
+		li{
+			text-align: left;
+			padding: 0 14px;
+			color: #000;
+			&:first-child{
+				height: 60px;
+				@include YanoneKaffeesatz;
+				font-weight: bold;
+			}
+		}
+	}
+	ul{
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 29px;
+		@include border-radius(0 0 4px 4px);
+		border: 1px solid #ccc;
+		@include box-shadow(0px 29px 72px -28px)
+	}
+	li{
+		border-bottom: 1px solid #ccc;
+		background: #f7f7f7;
+		line-height: 40px;
+		text-align: center;
+		font-size: 18px;
+		color: #989898;
+		&:nth-child(2n){
+			background: #fcfcfc;
+		}
+		&:last-child{
+			border-bottom: none;
+		}
+		&:first-child{
+			height: 60px;
+			line-height: 60px;
+		}
+	}
+	.price-list__free{
+		font: 30px "Myriad Pro", sans-serif;
+		color: #0090d3;
+	}
+	.price-list__pro{
+		// position: relative;
+		font: 48px "Myriad Pro", sans-serif;
+		color: #fff;
+	}
+	.price-list__pro-plus{
+		// position: relative;
+		font: 48px "Myriad Pro", sans-serif;
+		color: #fb9502;
+	}
+	.price-list__dollar{
+		font-size: 24px; 
+	}
+		.price-list__month{
+	font-size: 14px; 
+	}
+	.price-list__penny{
+		display: block;
+		position: absolute;
+		top: -15px;
+		right: 78px;
+		font-size: 24px; 
+	}
+	ul.price-list__head{
+		margin-bottom: -1px;
+		border: none;
+		@include border-radius(4px 4px 0 0);
+		li{
+			@include background-image(linear-gradient(top, #faca03, #fd9a0d));
+			text-align: center;
+			line-height: 60px;
+			@include Dosis-Bold;
+			font-size: 21px;
+			color: #fff;
+		}
+	}
+	.price-list_blue{
+		li{
+			height: 41px;
+			color: #fff;
+			border-bottom: none;
+			@include background-image(radial-gradient(#3faee2, #0a93d4));
+			&:first-child{
+				height: 61px;
+			}
+			&:nth-child(2n){
+				@include background-image(radial-gradient(#52b6e5, #259fd9));
+			}
+		}
+	}
+	.price-list__text{
+		margin: 18px 0 36px;
+		font-size: 18px;
+	}
+}
+.btn_free{
+	display: block;
+	width: 249px;
+	height: 50px;
+	margin-left:10%;
+	background: url(../img/btn-free.png) 0 0 no-repeat;
+}
+.as-seen-on{
+	overflow: hidden;
+	max-width: 956px;
+	margin: 0 auto;
+	h3{
+		font-size: 24px;
+	}
+	a{
+		float: left;
+	}
+}
+.details{
+	max-width: 956px;
+	margin: 0 auto;
+	overflow: hidden;
+	.details__col{
+		float: left;
+		width: 50%;
+		&:last-child{
+			float: right;
+			ul{
+				margin-left: 63px;
+			}
+			article{
+				width:63%
+			}
+		}
+		li{
+			overflow: hidden;
+			margin-bottom: 48px;
+		}
+		li img{
+			float: left;
+			margin: 6px 18px 18px 0;
+		}
+		article{
+			float: right;
+			width: 68%;
+		}
+		h3{
+			font: 24px "Myriad Pro", sans-serif;
+		}
+		p{
+			margin-top: 18px;
+			font-size: 18px;
+			text-align: justify;
+			color: #8a8a8a;
+		}
+	}
 }
