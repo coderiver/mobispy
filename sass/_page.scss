@@ -1,0 +1,173 @@
+@import "lib/base";
+
+// ---------------------styles for registration user.html ------------------
+
+.page__list_short{
+	margin-top: 15px;
+	text-align: left;
+}
+.page__col_mod{
+	text-align: left;
+	@include respond-to(iPhone-5){
+		float: none;
+		width: 97%;
+		padding: 0 5px;
+	}
+}
+.page__link-free_left{
+	width: 375px;
+	@include respond-to(iPhone-5){
+		width: auto;
+	}
+}
+.functional{
+	overflow: hidden;
+	@extend %clr;
+	@include respond-to(iPad){
+		padding: 0 5px;
+	}
+}	
+.functional__sidebar{
+	float: left;
+	width: 200px;
+	@include respond-to(iPhone-5){
+		width: 100%;
+	}
+	ul{
+		font-size: 19px;
+	}
+	a{
+		text-decoration: none;
+		color: #2d76bc;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.features{
+	margin-bottom: 20px;
+	@include respond-to(iPhone-5){
+		text-align: center;
+	}
+}
+.as-seen-on_aside h4{
+	margin-bottom: 15px;
+}
+.functional__content{
+	overflow: hidden;
+	float: right;
+	width: 78%;
+	border-left: 1px solid #b8b8b8;
+	@include respond-to(iPad){
+		width: 72%;
+	}
+	@include respond-to(iPhone-5){
+		width: 100%;
+		float: none;
+		border: none;
+	}
+}
+.features-item{
+	overflow: hidden;
+	h2{
+		font-size: 36px;
+	}
+	article{
+		font-size: 17px;
+		p{
+			margin-bottom: 10px;
+		}
+	}
+	.features-item__wrapper{
+		overflow: hidden;
+		padding: 0 24px;
+		@include respond-to(iPad){
+			padding: 0 10px;
+		}
+	}
+	.features-item__col{
+		float: left;
+		width: 50%;
+		@include respond-to(iPhone-w){
+			float: none;
+			width: 100%;
+		}
+	}
+	.features-item__col_mod{
+		text-align: center;
+		padding-top: 60px;
+	}
+}
+.small-banner{
+	overflow: hidden;
+	min-height: 100px;
+	margin: 5px 10px 5px 24px;
+	padding-bottom: 5px;
+	@include background-image(linear-gradient(top, #54a7fd, #0165b2));
+	@include respond-to(iPhone-5){
+		margin: 5px 10px;
+	}
+	article{
+		float: left;
+		@include respond-to(iPad){
+			float: none;
+		}
+	}
+	.small-banner__text{
+		position: relative;
+		width: 325px;
+		padding: 10px 0 0 41px;
+		@include YanoneKaffeesatz;
+		font-size: 16px;
+		color: #fff;
+		@include respond-to(iPad){
+			width: auto;
+		}
+		span{
+			display: block;
+			font-weight: bolder;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			top: 5px;
+			left: 10px;
+			@include sized-sprite($icons, quotes);
+		}
+	}
+	.small-banner__buttons{
+		overflow: hidden;
+		@include respond-to(iPad){
+			padding: 0 80px;
+		}
+		@include respond-to(iPhone-5){
+			padding: 0 53px;
+		}
+		.small-banner__link{
+			float: left;
+			width: 158px;
+			margin: 30px 7px 0px;
+			text-align: center;
+			font: 12px "Myriad Pro", sans-serif;
+			color: #fff;
+			@include respond-to(iPad){
+				margin: 10px 7px 0px;
+			}
+			p{
+				margin-top: 5px;
+			}
+		}
+		.l-btn_small{
+			background: #7cb4e5;
+			padding: 4px;
+		}
+		.btn_small{
+			display: block;
+			height: 33px;
+			background: url(../img/btn-free_small.png) 0 0 no-repeat;
+		}
+		.btn_demo{
+			background: url(../img/btn-demo_small.png) 0 0 no-repeat;
+		}
+	}
+}

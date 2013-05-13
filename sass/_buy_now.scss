@@ -289,6 +289,12 @@
 		@include respond-to(iPhone){
 			width: 50%;
 		}
+		img{
+			margin: 10px;
+			@include respond-to(iPhone){
+				margin: 0px;
+			}
+		}
 	}
 	@include respond-to(iPad){
 		padding: 0 5px;

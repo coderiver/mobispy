@@ -2,7 +2,7 @@
 
 // ---------------------styles for registration user.html ------------------
 
-.l-registration{
+.l-page{
 	max-width: 956px;
 	margin: 0 auto;
 	h1{
@@ -35,10 +35,16 @@
 			font-size: 20px;
 		}
 	}
+	h4{
+		@include YanoneKaffeesatz;
+		font-size: 24px;
+		font-weight: bold;
+		color: #000;
+	}
 }
-.registration{
+.page{
 	overflow: hidden;
-	.registration__col{
+	.page__col{
 		width: 50%;
 		float: left;
 		text-align: center;
@@ -54,7 +60,7 @@
 			padding: 0 5px;
 		}
 	}
-	.registration__col_right{
+	.page__col_right{
 		width: 48%;
 		text-align: left;
 		padding-left: 2%;
@@ -65,11 +71,11 @@
 		}
 	}
 }
-.registration__list{
+.page__list{
 	font-size: 24px;
 	li{
 		position: relative;
-		padding: 10px 0 10px 20px;
+		padding: 10px 0 0 20px;
 		@include respond-to(iPhone-5){
 			padding: 10px 0 0px 20px;
 		}
@@ -81,6 +87,10 @@
 			@include sized-sprite($icons, list);
 		}
 	}
+}
+
+.page__link-free{
+	text-align: center;
 }
 .btn_free-big{
 	display: block;
@@ -101,6 +111,9 @@
 			background: url(../img/btn-free-hover.png) 0 0 no-repeat;
 		}
 	}
+}
+.btn_free-big_left{
+	margin: 21px 0 0!important;
 }
 .costumers{
 	overflow: hidden;

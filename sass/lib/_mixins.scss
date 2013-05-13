@@ -56,7 +56,7 @@ $break-iphone: 320px;
 $break-iphone-5: 568px;
 $break-iphone-w: 480px;
 $break-medium: 768px;
-$break-large: 1008px;
+$break-large: 956px;
 
 @mixin respond-to($media) {
 	@if $media == iPhone {
