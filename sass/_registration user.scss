@@ -94,21 +94,25 @@
 }
 .btn_free-big{
 	display: block;
-	height: 75px;
-	width: 375px;
+	// height: 75px;
+	// width: 375px;
 	margin: 21px auto 0;
-	background: url(../img/btn-free_big.png) 0 0 no-repeat;
+	@include sized-sprite($buttons, btn-free_big);
+	// background: url(../img/btn-free_big.png) 0 0 no-repeat;
 	@include respond-to(iPhone){
-		width: 177px;
-		height: 50px;
-		background: url(../img/btn-free.png) 0 0 no-repeat;
+		@include sized-sprite($buttons, btn-free);
+		// width: 177px;
+		// height: 50px;
+		// background: url(../img/btn-free.png) 0 0 no-repeat;
 	}
 	&:hover{
-		background: url(../img/btn-free_big-hover.png) 0 0 no-repeat;
+		@include sized-sprite($buttons, btn-free_big-hover);
+		// background: url(../img/btn-free_big-hover.png) 0 0 no-repeat;
 		@include respond-to(iPhone){
-			width: 177px;
-			height: 50px;
-			background: url(../img/btn-free-hover.png) 0 0 no-repeat;
+			@include sized-sprite($buttons, btn-free-hover);
+			// width: 177px;
+			// height: 50px;
+			// background: url(../img/btn-free-hover.png) 0 0 no-repeat;
 		}
 	}
 }

@@ -227,9 +227,9 @@ body{
 	width: 90%;
 	height: 55px;
 	margin: 0px auto;
-	padding-top: 20px;
 	text-align:center;
-	background: url(../img/btn-big.png) no-repeat;
+	@include sized-sprite($buttons, btn-free_big);
+	// background: url(../img/btn-big.png) no-repeat;
 	@include Dosis-Bold;
 	font-size: 32px;
 	text-transform: uppercase;
@@ -244,7 +244,8 @@ body{
 		font-size: 27px;
 	}
 	&:hover{
-		background: url(../img/btn-big-hover.png) no-repeat;
+		@include sized-sprite($buttons, btn-free_big-hover);
+		// background: url(../img/btn-big-hover.png) no-repeat;
 	}
 }
 .description{
@@ -346,9 +347,11 @@ h1{
 		display: block;
 		width: 293px;
 		height: 58px;
-		background: url(../img/btn-banner.png);
+		@include sized-sprite($buttons, btn-banner);
+		// background: url(../img/btn-banner.png);
 		&:hover{
-			background: url(../img/btn-banner-act.png);
+			@include sized-sprite($buttons, btn-banner-act);
+			// background: url(../img/btn-banner-act.png);
 		}
 	}
 }

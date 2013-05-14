@@ -10,6 +10,8 @@
 $experimental-support-for-svg: true;
 // global sprites with padding
 $icons: sprite-map("icons/*.png", $spacing: 10px);
+// sprites with buttons
+$buttons: sprite-map("buttons/*.png", $spacing: 10px);
 
 // fonts
 @font-face {

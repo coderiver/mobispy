@@ -63,11 +63,9 @@
 		}
 		.btn-arrow{
 			float: right;
-			width: 297px;
-			height: 87px;
-			background: url(../img/btn-arrow.png) 0 0 no-repeat;
+			@include sized-sprite($buttons, btn-arrow);
 			&:hover{
-				background: url(../img/btn-arrow-hover.png) 0 0 no-repeat;
+				@include sized-sprite($buttons, btn-arrow-hover);
 			}
 			@include respond-to(iPad){
 				margin-right: 5%;
@@ -157,6 +155,16 @@
 			height: 60px;
 			line-height: 60px;
 		}
+		i.icon-none{
+			display: inline-block;
+			vertical-align: middle;
+			@include sized-sprite($icons, none);
+		}
+		i.icon-yes{
+			display: inline-block;
+			vertical-align: middle;
+			@include sized-sprite($icons, yes);
+		}
 		@include respond-to(iPad){
 			font-size: 15px;
 		}
@@ -182,13 +190,7 @@
 		font: 30px "Myriad Pro", sans-serif;
 		color: #0090d3;
 	}
-	.price-list__pro{
-		// position: relative;
-		font: 48px "Myriad Pro", sans-serif;
-		color: #fff;
-	}
-	.price-list__pro-plus{
-		// position: relative;
+	.price-list__money{
 		font: 48px "Myriad Pro", sans-serif;
 		color: #fb9502;
 	}
@@ -236,6 +238,11 @@
 			&:nth-child(2n){
 				@include background-image(radial-gradient(#52b6e5, #259fd9));
 			}
+			i.icon-yes-white{
+				display: inline-block;
+				vertical-align: middle;
+				@include sized-sprite($icons, yes-white);
+			}
 		}
 	}
 	.price-list__text{
@@ -256,25 +263,29 @@
 }
 .btn_free{
 	display: block;
-	height: 50px;
+	// height: 50px;
 	margin-left:10%;
-	background: url(../img/btn-free.png) 0 0 no-repeat;
+	@include sized-sprite($buttons, btn-free);
+	// background: url(../img/btn-free.png) 0 0 no-repeat;
 	@include respond-to(iPad){
 		margin-left: 0px;
 	}
 	@include respond-to(iPhone-5){
-		height: 36px;
-		background: url(../img/btn-free_iphone.png) 0 0 no-repeat;
+		// height: 36px;
+		@include sized-sprite($buttons, btn-free_iphone);
+		// background: url(../img/btn-free_iphone.png) 0 0 no-repeat;
 	}
 	@include respond-to(iPhone-w){
-		height: 50px;
+		// height: 50px;
 		margin-left:10%;
-		background: url(../img/btn-free.png) 0 0 no-repeat;
+		@include sized-sprite($buttons, btn-free);
+		// background: url(../img/btn-free.png) 0 0 no-repeat;
 	}
 	@include respond-to(iPhone){
-		height: 36px;
+		// height: 36px;
 		margin-left:7%;
-		background: url(../img/btn-free_iphone.png) 0 0 no-repeat;
+		@include sized-sprite($buttons, btn-free_iphone);
+		// background: url(../img/btn-free_iphone.png) 0 0 no-repeat;
 	}
 }
 .as-seen-on{
@@ -290,7 +301,7 @@
 			width: 50%;
 		}
 		img{
-			margin: 10px;
+			margin: 8px;
 			@include respond-to(iPhone){
 				margin: 0px;
 			}
@@ -330,15 +341,9 @@
 				}
 			}
 			article{
-				width:63%;
-				@include respond-to(iPad){
-					width:60%;
-				}
+				width:73%;
 				@include respond-to(iPhone-5){
-					width: 70%;
-				}
-				@include respond-to(iPhone-w){
-					width: 68%;
+					width: 78%;
 				}
 				@include respond-to(iPhone){
 					width: 100%;
@@ -366,7 +371,7 @@
 				width:62%;
 			}
 			@include respond-to(iPhone-5){
-				width: 70%;
+				width: 69%;
 			}
 			@include respond-to(iPhone){
 				float: none;

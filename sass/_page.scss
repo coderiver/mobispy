@@ -164,10 +164,12 @@
 		.btn_small{
 			display: block;
 			height: 33px;
-			background: url(../img/btn-free_small.png) 0 0 no-repeat;
+			@include sized-sprite($buttons, btn-free_small);
+			// background: url(../img/btn-free_small.png) 0 0 no-repeat;
 		}
 		.btn_demo{
-			background: url(../img/btn-demo_small.png) 0 0 no-repeat;
+			@include sized-sprite($buttons, btn-demo_small);
+			// background: url(../img/btn-demo_small.png) 0 0 no-repeat;
 		}
 	}
 }
